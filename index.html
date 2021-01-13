@@ -28,4 +28,90 @@
              src="/images/rf.JPG"
              alt="Roger Federer at 2018 Wimbledon">
 
+    <h2>Let me learn more about my visitors!</h2>
+    <form action="" method="get" class="form">
+        <div class="form">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name required">
+        </div>
+
+        <div class="form">
+            <label for="data">Todays' date: </label>
+            <input type="date" name="date" id="date required">
+        </div>
+
+        <div class="form">
+            <label for="email">Gmail address: </label>
+            <input type="email" id="email required" pattern=".+@gmail.com" size="30" required>
+        </div>
+
+        <div class="form">
+            <label for="phone">Phone number: </label>
+            <input type="tel" name="phone" id="phone number required" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+            required>
+        </div>
+
+        <div class="form">
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age required" min="1" max="100"> 
+        </div>
+
+        <p>Which superpowers would you like to gain? (Choose multiple)</p>
+        <div class="form">
+            <div>
+                <input type="checkbox" id="superhuman strength" name="superhuman strength" checked>
+                <label for="superhuman strength">superhuman strength</label>
+            </div>>
+            <div>
+                <input type="checkbox" id="invisibility" name="invisibility" checked>
+                <label for="invisibility">invisibility</label>
+            </div>>
+            <div>
+                <input type="checkbox" id="telepathy" name="telepathy" checked>
+                <label for="telepathy">telepathy</label>
+            </div>>
+            <div>
+                <input type="checkbox" id="shapeshifting" name="shapeshifting" checked>
+                <label for="shapeshifting">shapeshifting</label>
+            </div>>
+        </div>
+
+        <p>Which of these activities would you like to do the most?</p>
+        <div class="form">
+            <div>
+                <input type="radio" id="bungee" name="activity" value="bungee" check>
+                <label for="bungee">Bungee jumping</label>
+            </div>
+            <div>
+                <input type="radio" id="skydive" name="activity" value="skydive" check>
+                <label for="skydive">Skydiving</label>
+            </div>
+            <div>
+                <input type="radio" id="zipline" name="activity" value="zipline" check>
+                <label for="zipline">Ziplining</label>
+            </div>
+        </div>
+
+        <p>How has your day been? (left=bad, right=amazing!)</p>
+        <div class="form">
+            <div>
+                <input type="range" id="mood" name="mood" min="0" max="100" value="50" step="10">
+                <label for="mood">Mood</label>
+            </div>
+        </div>
+
+        <div class="form">
+            <label for="message">Leave me a message: </label>
+            <input type="text" name="message" id="message required">
+        </div>
+
+        <p>Attach your favorite meme:</p>
+        <div class="form">
+            <input type="file" id="meme" name="meme" accept="image/png, image/jpeg"> 
+        </div>
+
+        <div class="form">
+            <input type="submit" value="Submit">
+        </div>
+
 </html>
