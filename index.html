@@ -47,9 +47,13 @@
 
             <h3>UCSD CSE Tutor</h3>
             <p>I am currently tutoring for my third quarter in a row! As a tutor, I assist professors with 
-                their intorductory Java and Python courses. Some of my responsibilities include conducting
-                personal tutor hours and grading.
+                their intorductory Java and Python courses.
             </p>
+            <details>
+                <summary>Tutoring Responsibilities</summary>
+                Some of my duties include conducting personal tutor hours, answering student questions,
+                and grading.
+            </details>
 
             <aside>
                 <p>I have tutored for the following courses: CSE 8A and CSE 8B.</p>
@@ -69,7 +73,7 @@
             <h3>Tennis</h3>
             <p>My favorite sport to watch and play is tennis. This is a photo I took of Roger Federer during
                the 2018 Wimbledon. When I found out I was going to watch him play live, I thought
-               I absolutely cannot wait!</i>
+               <i>I absolutely cannot wait!</i>
             </p>
             <img class="roger-federer"
                 src="/images/rf.JPG"
@@ -84,12 +88,59 @@
 
             <p>I have also been able to watch many professional players play live. Some of favorites to
                watch (besides Roger Federer) are <span class="player">Serena Williams</span> and 
-               <span class="player">Alexander Zverev</span>.
-             </p>
+               <span class="player">Alexander Zverev</span> Here are some statistics about those players:
+            </p>
+
+            <table>
+                <caption>Professional Tennis Players Statistics</caption>
+                <colgroup>
+                    <col span="4" class="player">
+                    <col span="4" class="grand-slams">
+                </colgroup>
+                <tr>
+                    <th scope="col">Player</th>
+                    <th scope="col">Grand Slams</th>
+                </tr>
+                <tr>
+                    <th scope="row">Roger Federer</th>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Serena Williams</th>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <th scope="row">Alexander Zverev</th>
+                    <td>0</td>
+                </tr>
+            </table>
         </section>
 
         <section>
             <h2>Course Schedule</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">2020-2021 Class Schedule</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fall Quarter</td>
+                        <td>Winter Quarter</td>
+                        <td>CSE 100</td>
+                        <td>CSE 110</td>
+                        <td>CSE 105</td>
+                        <td>CSE 101</td>
+                        <td>MGT 103</td>
+                        <td>MGT 45</td>
+                        <td>ANTH 21</td>
+                        <td>MATH 183</td>
+                        <td>MUS 95G</td>   
+                    </tr>
+                </tbody>
+            </table>
+
             <p>Fun fact: One of the most interesting things I learned to use in CSE 100 was and
                <code>iterator</code>. During the course, I learned how to use <code>begin()</code> and
                <code>end()</code>.
@@ -118,7 +169,6 @@
             </p>
             
         </section>
-        
 
         <h2>Let me learn more about my visitors!</h2>
         <form method="get" class="form">
@@ -247,8 +297,9 @@
             </div>
         </form>
 
-        <figure role="img" aria-labelledby="flower-caption">
-            <pre>
+        <button class="enjoyed" type="button">I enjoyed this webpage!</button>
+
+        <pre>
                          _(_)_                      
              @@@@       (_)@(_)  vVVVv    _     @@@@
             @@()@@ wWWWw  (_)\   (___)  _(_)_  @@()@@
@@ -257,8 +308,7 @@
            \ |     \ |/       | /\ | / \|/       |/
           jgs|///  \\|/// \\\\|//\\|///\|///  \\\|//
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
-            </pre>
-        </figure>
+        </pre>
 
         <footer>
             <p>Thank you for visiting!</p>
