@@ -36,7 +36,7 @@
         </div>
 
         <div class="form">
-            <label for="data">Todays' date: </label>
+            <label for="date">Todays' date: </label>
             <input type="date" name="date" id="date">
         </div>
 
@@ -56,8 +56,8 @@
             <input type="number" name="age" id="age" min="1" max="100"> 
         </div>
 
-        <p>Which superpowers would you like to gain? (Choose multiple)</p>
-        <div class="form">
+        <fieldset>
+            <legend>Which superpowers would you like to gain? (Choose multiple)</legend>
             <div>
                 <input type="checkbox" id="strength" name="strength">
                 <label for="strength">superhuman strength</label>
@@ -74,10 +74,10 @@
                 <input type="checkbox" id="shapeshifting" name="shapeshifting">
                 <label for="shapeshifting">shapeshifting</label>
             </div>>
-        </div>
+        </fieldset>
 
-        <p>Which of these activities would you like to do the most?</p>
-        <div class="form">
+        <fieldset>
+            <legend>Which of these activities would you like to do the most?</legend>
             <div>
                 <input type="radio" id="bungee" name="activity" value="bungee">
                 <label for="bungee">Bungee jumping</label>
@@ -90,6 +90,39 @@
                 <input type="radio" id="zipline" name="activity" value="zipline">
                 <label for="zipline">Ziplining</label>
             </div>
+        </fieldset>
+
+        <label for="pet-select">Which pet would you like to own?</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Choose an option--</option>
+            <optgroup label="Rodents">
+                <option>Hamster</option>
+                <option>Rat</option>
+                <option>Chinchilla</option>
+            </optgroup>
+            <optgroup label="Cats">
+                <option>Burmese</option>
+                <option>Persian</option>
+                <option>Siamese</option>
+            </optgroup>
+            <optgroup label="Dogs">
+                <option>Havanese</option>
+                <option>Golden Retriever</option>
+                <option>Corgi</option>
+            </optgroup>
+        </select>
+
+        <div class="form">
+            <label for="color">Pick your favorite color from a rainbow:</label>
+            <input list="color-options" id="color-choice" name="color-choice" />
+            <datalist id="color-options">
+                <option value="Red">
+                <option value="Yellow">
+                <option value="Orange">
+                <option value="Green">
+                <option value="Blue">
+                <option value="Purple">
+            </datalist>
         </div>
 
         <p>How has your day been? (left=bad, right=amazing!)</p>
@@ -101,13 +134,20 @@
         </div>
 
         <div class="form">
-            <label for="message">Leave me a message: </label>
-            <input type="text" name="message" id="message">
+            <label for="explain">Why did you visit my website?</label>
+            <textarea id="explain" name="explain" rows="8" cols="40">
+            Write here...
+            </textarea>
         </div>
 
         <p>Attach your favorite meme:</p>
         <div class="form">
             <input type="file" id="meme" name="meme" accept="image/png, image/jpeg"> 
+        </div>
+
+        <div class="form">
+            <label for="message">Is there anything else you would like me to know about you? </label>
+            <input type="text" name="message" id="message">
         </div>
 
         <div class="form">
