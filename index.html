@@ -46,18 +46,17 @@
                undergraduate mentor.
             </p>
 
+            <h3>UCSD CSE Tutor</h3>
+            <p>I am currently tutoring for my third quarter in a row! As a tutor, I assist professors with 
+               their intorductory Java and Python courses. Tutoring is an amazing experience because I get 
+               to work with so many hardworking and intelligent tutors and TAs. Every quarter, I learn 
+               a lot from the people I work with - especially the professors who deeply care about the 
+               welfare of their students. Additionally, I love helping and showing students the wonders
+               of computer science!
+            </p>
             <aside>
                 <p>I have tutored for the following courses: CSE 8A and CSE 8B.</p>
             </aside>
-
-            <h3>UCSD CSE Tutor</h3>
-            <p>I am currently tutoring for my third quarter in a row! As a tutor, I assist professors with 
-                their intorductory Java and Python courses. Tutoring is an amazing experience because I get 
-                to work with so many hardworking and intelligent tutors and TAs. Every quarter, I learn 
-                a lot from the people I work with - especially the professors who deeply care about the 
-                welfare of their students. Additionally, I love helping and showing students the wonders
-                of computer science!
-            </p>
             <details>
                 <summary>Tutoring Responsibilities</summary>
                 Some of my duties include conducting personal tutor hours, answering student questions,
@@ -71,6 +70,7 @@
 
         <section>
             <h2>Interests</h2>
+
             <h3>Reading</h3>
             <p>I love to read in my free time! Here are some of my favorite books:</p>
             <ul>
@@ -89,16 +89,16 @@
             </figure>
 
             <p>I have been lucky enough to attend many professional tennis tournaments including the 
-               <span class="tournament">BNP Paribas</span>, <span class="tournament">Miami Open</span>,
-               and <span class="tournament">Wimbledon</span>. However, Wimbledon was my favorite because
+               <span style:"color:purple">BNP Paribas</span>, <span style:"color:purple">Miami Open</span>,
+               and <span style:"color:purple">Wimbledon</span>. However, Wimbledon was my favorite because
                it was in England!
             </p>
 
             <hr>
 
             <p>I have also been able to watch many professional players play live. Some of favorites to
-               watch (besides Roger Federer) are <span class="player">Serena Williams</span> and 
-               <span class="player">Alexander Zverev</span> Here are some statistics about those players:
+               watch (besides Roger Federer) are <span style:"color:green">Serena Williams</span> and 
+               <span style:"color:green">Alexander Zverev</span>. Here are some statistics about those players:
             </p>
 
             <table>
@@ -181,7 +181,7 @@
             </p>
 
             <p>You can learn more about the UCSD CSE courses here:</p>
-            <iframe id="inlineDallasMap" title="Inline Dallas Map" width="300" height="200"
+            <iframe id="inlineDallasMap" title="Inline Dallas Map" width="400" height="400"
                 src="https://www.ucsd.edu/catalog/courses/CSE.html"
             >
             </iframe>
@@ -190,37 +190,49 @@
         <section>
             <h2>Random Stuff About Me</h2>
 
-            <p>I have a dog named Newton! He is a lovely Havanese, and I miss him dearly because I do not
-                get to see him a lot while I am at college.</p>
+            <div class="newton-dog">
+                <p>I have a dog named Newton! He is a lovely Havanese, and I miss him dearly because I do not
+                    get to see him a lot while I am at college.</p>
+    
+                <figure>
+                    <img src="media/newton.jpeg" alt="Newton in his Christmas pajamas" width="400" height="550">
+                    <figcaption>Newton in his Christmas pajamas</figcaption>
+                </figure>
+    
+                <picture>
+                    <source srcset="media/newton_back.jpeg"
+                            media="(max-width: 5000px)">
+                    <img src="media/newton_couch.jpeg" alt="Newton on the couch" width="400" height="550"/>
+                </picture>
+    
+                <video controls width="250">
+                    <source src="./media/newton_vid.mp4" type="video/mp4">
+                        Your browser does not support embedded video.
+                </video>
+            </div>
 
-            <figure>
-                <img src="media/newton.jpeg" alt="Newton in his Christmas pajamas" width="400" height="550">
-                <figcaption>Newton in his Christmas pajamas</figcaption>
-            </figure>
+            <div class="music">
+                <p>Even though my singing voice is terrible, I love to listen to music! I always love finding
+                    new artists to listen to, but some of favorites are <b class="artist">Coldplay</b>, 
+                    <b class="artist">One Republic</b>, <b class="artist">COIN</b>, and
+                    <b class="artist">Dayglow</b>.
+                 </p>
+     
+                 <p>Here is a verse from one of my favorite Coldplay songs:<br>
+                    Lights will guide you home<br>
+                    And ignite your bones<br>
+                    And I will try to fix you<br>
+                 </p>
+            </div>
 
-            <picture>
-                <source srcset="media/newton_back.jpeg"
-                        media="(max-width: 5000px)">
-                <img src="media/newton_couch.jpeg" alt="Newton on the couch" width="400" height="550"/>
-            </picture>
-
-            <video controls width="250">
-                <source src="./media/newton_vid.mp4" type="video/mp4">
-                    Your browser does not support embedded video.
-            </video>
-            
-
-            <p>Even though my singing voice is terrible, I love to listen to music! I always love finding
-               new artists to listen to but some of favorites are <b class="artist">Coldplay</b>, 
-               <b class="artist">One Republic</b>, <b class="artist">COIN</b>, and
-               <b class="artist">Dayglow</b>.
-            </p>
-
-            <p>Here is a verse from one of my favorite Coldplay songs:<br>
-               Lights will guide you home<br>
-               And ignite your bones<br>
-               And I will try to fix you<br>
-            </p>
+            <div class="travel">
+                <p>These are the places I would like to travel to one day (ranked):</p>
+                <ol>
+                    <li>Sydney, Australia</li>
+                    <li>Bora Bora</li>
+                    <li>Iceland</li>
+                </ol>
+            </div>
         </section>
 
         <section>
@@ -244,7 +256,7 @@
         </section>
 
         <section>
-            <h2>Let me learn more about my visitors!</h2>
+            <h2>Help me learn more about my visitors!</h2>
             <form method="get" class="form">
                 <div class="form">
                     <label for="name">Name: </label>
@@ -329,7 +341,7 @@
                 </select>
 
                 <div class="form">
-                    <label for="color-choice">Pick your favorite color from a rainbow:</label>
+                    <label for="color-choice">Pick your favorite color from the rainbow:</label>
                     <input list="color-options" id="color-choice" name="color-choice" />
                     <datalist id="color-options">
                         <option value="Red">
