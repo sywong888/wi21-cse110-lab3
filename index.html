@@ -46,20 +46,28 @@
                undergraduate mentor.
             </p>
 
+            <aside>
+                <p>I have tutored for the following courses: CSE 8A and CSE 8B.</p>
+            </aside>
+
             <h3>UCSD CSE Tutor</h3>
             <p>I am currently tutoring for my third quarter in a row! As a tutor, I assist professors with 
-                their intorductory Java and Python courses.
+                their intorductory Java and Python courses. Tutoring is an amazing experience because I get 
+                to work with so many hardworking and intelligent tutors and TAs. Every quarter, I learn 
+                a lot from the people I work with - especially the professors who deeply care about the 
+                welfare of their students. Additionally, I love helping and showing students the wonders
+                of computer science!
             </p>
             <details>
                 <summary>Tutoring Responsibilities</summary>
                 Some of my duties include conducting personal tutor hours, answering student questions,
                 and grading.
-            </details>
-
-            <aside>
-                <p>I have tutored for the following courses: CSE 8A and CSE 8B.</p>
-            </aside>
+            </details>    
         </section>
+
+        <template>
+            <h1>This will not be visible because it has a template tag.</h1>
+        </template>
 
         <section>
             <h2>Interests</h2>
@@ -192,7 +200,7 @@
 
             <picture>
                 <source srcset="media/newton_back.jpeg"
-                        media="(min-width: 500px)">
+                        media="(min-width: 200px)">
                 <img src="media/newton_couch.jpeg" alt="Newton on the couch" />
             </picture>
 
@@ -235,132 +243,134 @@
             </canvas>
         </section>
 
-        <h2>Let me learn more about my visitors!</h2>
-        <form method="get" class="form">
-            <div class="form">
-                <label for="name">Name: </label>
-                <input type="text" name="name" id="name">
-            </div>
-
-            <div class="form">
-                <label for="date">Todays' date: </label>
-                <input type="date" name="date" id="date">
-            </div>
-
-            <div class="form">
-                <label for="email">Gmail address: </label>
-                <input type="email" id="email" pattern=".+@gmail.com" size="30" required>
-            </div>
-
-            <div class="form">
-                <label for="phone">Phone number: </label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-                required>
-            </div>
-
-            <div class="form">
-                <label for="age">Age: </label>
-                <input type="number" name="age" id="age" min="1" max="100"> 
-            </div>
-
-            <fieldset>
-                <legend>Which superpowers would you like to gain? (Choose multiple)</legend>
-                <div>
-                    <input type="checkbox" id="strength" name="strength">
-                    <label for="strength">superhuman strength</label>
-                </div>>
-                <div>
-                    <input type="checkbox" id="invisibility" name="invisibility">
-                    <label for="invisibility">invisibility</label>
-                </div>>
-                <div>
-                    <input type="checkbox" id="telepathy" name="telepathy">
-                    <label for="telepathy">telepathy</label>
-                </div>>
-                <div>
-                    <input type="checkbox" id="shapeshifting" name="shapeshifting">
-                    <label for="shapeshifting">shapeshifting</label>
-                </div>>
-            </fieldset>
-
-            <fieldset>
-                <legend>Which of these activities would you like to do the most?</legend>
-                <div>
-                    <input type="radio" id="bungee" name="activity" value="bungee">
-                    <label for="bungee">Bungee jumping</label>
+        <section>
+            <h2>Let me learn more about my visitors!</h2>
+            <form method="get" class="form">
+                <div class="form">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
                 </div>
-                <div>
-                    <input type="radio" id="skydive" name="activity" value="skydive">
-                    <label for="skydive">Skydiving</label>
+
+                <div class="form">
+                    <label for="date">Todays' date: </label>
+                    <input type="date" name="date" id="date">
                 </div>
-                <div>
-                    <input type="radio" id="zipline" name="activity" value="zipline">
-                    <label for="zipline">Ziplining</label>
+
+                <div class="form">
+                    <label for="email">Gmail address: </label>
+                    <input type="email" id="email" pattern=".+@gmail.com" size="30" required>
                 </div>
-            </fieldset>
 
-            <label for="pet-select">Which pet would you like to own?</label>
-            <select name="pets" id="pet-select">
-                <option value="">--Choose an option--</option>
-                <optgroup label="Rodents">
-                    <option>Hamster</option>
-                    <option>Rat</option>
-                    <option>Chinchilla</option>
-                </optgroup>
-                <optgroup label="Cats">
-                    <option>Burmese</option>
-                    <option>Persian</option>
-                    <option>Siamese</option>
-                </optgroup>
-                <optgroup label="Dogs">
-                    <option>Havanese</option>
-                    <option>Golden Retriever</option>
-                    <option>Corgi</option>
-                </optgroup>
-            </select>
-
-            <div class="form">
-                <label for="color-choice">Pick your favorite color from a rainbow:</label>
-                <input list="color-options" id="color-choice" name="color-choice" />
-                <datalist id="color-options">
-                    <option value="Red">
-                    <option value="Yellow">
-                    <option value="Orange">
-                    <option value="Green">
-                    <option value="Blue">
-                    <option value="Purple">
-                </datalist>
-            </div>
-
-            <p>How has your day been? (left=bad, right=amazing!)</p>
-            <div class="form">
-                <div>
-                    <input type="range" id="mood" name="mood" min="0" max="100" value="50" step="10">
-                    <label for="mood">Mood</label>
+                <div class="form">
+                    <label for="phone">Phone number: </label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+                    required>
                 </div>
-            </div>
 
-            <div class="form">
-                <label for="explain">Why did you visit my website?</label>
-                <textarea id="explain" name="explain" rows="8" cols="40">
-                Write here...
-                </textarea>
-            </div>
+                <div class="form">
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id="age" min="1" max="100"> 
+                </div>
 
-            <p>Attach your favorite meme:</p>
-            <div class="form">
-                <input type="file" id="meme" name="meme" accept="image/png, image/jpeg"> 
-            </div>
+                <fieldset>
+                    <legend>Which superpowers would you like to gain? (Choose multiple)</legend>
+                    <div>
+                        <input type="checkbox" id="strength" name="strength">
+                        <label for="strength">superhuman strength</label>
+                    </div>>
+                    <div>
+                        <input type="checkbox" id="invisibility" name="invisibility">
+                        <label for="invisibility">invisibility</label>
+                    </div>>
+                    <div>
+                        <input type="checkbox" id="telepathy" name="telepathy">
+                        <label for="telepathy">telepathy</label>
+                    </div>>
+                    <div>
+                        <input type="checkbox" id="shapeshifting" name="shapeshifting">
+                        <label for="shapeshifting">shapeshifting</label>
+                    </div>>
+                </fieldset>
 
-            <div class="form">
-                <label for="message">Is there anything else you would like me to know about you? </label>
-                <input type="text" name="message" id="message">
-            </div>
+                <fieldset>
+                    <legend>Which of these activities would you like to do the most?</legend>
+                    <div>
+                        <input type="radio" id="bungee" name="activity" value="bungee">
+                        <label for="bungee">Bungee jumping</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="skydive" name="activity" value="skydive">
+                        <label for="skydive">Skydiving</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="zipline" name="activity" value="zipline">
+                        <label for="zipline">Ziplining</label>
+                    </div>
+                </fieldset>
 
-            <div class="form">
-                <input type="submit" value="Submit">
-            </div>
-        </form>
+                <label for="pet-select">Which pet would you like to own?</label>
+                <select name="pets" id="pet-select">
+                    <option value="">--Choose an option--</option>
+                    <optgroup label="Rodents">
+                        <option>Hamster</option>
+                        <option>Rat</option>
+                        <option>Chinchilla</option>
+                    </optgroup>
+                    <optgroup label="Cats">
+                        <option>Burmese</option>
+                        <option>Persian</option>
+                        <option>Siamese</option>
+                    </optgroup>
+                    <optgroup label="Dogs">
+                        <option>Havanese</option>
+                        <option>Golden Retriever</option>
+                        <option>Corgi</option>
+                    </optgroup>
+                </select>
+
+                <div class="form">
+                    <label for="color-choice">Pick your favorite color from a rainbow:</label>
+                    <input list="color-options" id="color-choice" name="color-choice" />
+                    <datalist id="color-options">
+                        <option value="Red">
+                        <option value="Yellow">
+                        <option value="Orange">
+                        <option value="Green">
+                        <option value="Blue">
+                        <option value="Purple">
+                    </datalist>
+                </div>
+
+                <p>How has your day been? (left=bad, right=amazing!)</p>
+                <div class="form">
+                    <div>
+                        <input type="range" id="mood" name="mood" min="0" max="100" value="50" step="10">
+                        <label for="mood">Mood</label>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <label for="explain">Why did you visit my website?</label>
+                    <textarea id="explain" name="explain" rows="8" cols="40">
+                    Write here...
+                    </textarea>
+                </div>
+
+                <p>Attach your favorite meme:</p>
+                <div class="form">
+                    <input type="file" id="meme" name="meme" accept="image/png, image/jpeg"> 
+                </div>
+
+                <div class="form">
+                    <label for="message">Is there anything else you would like me to know about you? </label>
+                    <input type="text" name="message" id="message">
+                </div>
+
+                <div class="form">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
 
         <button class="enjoyed" type="button">I enjoyed this webpage!</button>
 
