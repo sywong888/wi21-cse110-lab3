@@ -180,12 +180,21 @@
 
         <section>
             <h2>Random Stuff About Me</h2>
+
             <p>I have a dog named Newton! He is a lovely Havanese, and I miss him dearly because I do not
                 get to see him a lot while I am at college.</p>
+
             <figure>
-                <img src="media/newton.jpeg" alt="Newton in his Christmas pajamas">
+                <img src="media/newton.jpeg" alt="Newton in his Christmas pajamas" width="400" height="550">
                 <figcaption>Newton in his Christmas pajamas</figcaption>
             </figure>
+
+            <picture>
+                <source srcset="media/newton_back.jpeg"
+                        media="(min-width: 500px)">
+                <img src="media/newton_couch.jpeg" alt="Newton on the couch" />
+            </picture>
+
             <video controls width="250">
                 <source src="./media/newton_vid.mp4" type="video/mp4">
                     Your browser does not support embedded video.
