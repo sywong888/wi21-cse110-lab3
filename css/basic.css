@@ -47,3 +47,17 @@ p:hover {
 a:active {
     color: orange;
 }
+
+@media screen and (min-width: 100px) {
+    /* yes */
+    body {
+        background-color:beige;
+    }
+}
+
+nav.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+}
