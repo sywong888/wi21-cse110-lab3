@@ -34,3 +34,16 @@ div.travel {
     margin-right: 15px;
     margin-left: 20px;
 }
+
+h2 ~ h3 {
+    background-color:lightskyblue;
+    font-family: 'Architects Daughter', cursive;
+}
+
+p:hover {
+    background-color: hsl(60, 100%, 50%, .75);
+}
+
+a:active {
+    color: orange;
+}
