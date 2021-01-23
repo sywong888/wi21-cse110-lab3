@@ -61,3 +61,46 @@ nav.menu {
     left: 0;
     width: 200px;
 }
+
+#name {
+    text-align: center;
+    color: hsl(120, 100%, 25%);
+}
+
+* {
+    text-align: left;
+    color: #777;
+}
+
+p {
+    text-align: center;
+    color: #0000ff;
+    font-size: .5cm;
+    line-height: .3in;
+    position: static;
+}
+
+a[href] {
+    background-color: pink;
+}
+
+p:hover {
+    background-color: hsl(60, 100%, 50%, .75);
+}
+
+ol > li {
+    background-color: lightgreen;
+}
+
+section label {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+span, code {
+    border: green 5px solid;
+}
+
+.verse {
+    background-color: beige;
+    margin: auto;
+}
