@@ -8,3 +8,8 @@ h1 {
 figure + p {
     background-color: indianred;
 }
+
+div.newton-dog {
+    background-color:lightslategray;
+    max-width: 600px;
+}
