@@ -64,7 +64,7 @@ nav.menu {
 
 #name {
     text-align: center;
-    color: hsl(120, 100%, 25%);
+    color: hsla(120, 100%, 25%, .5);
 }
 
 * {
@@ -89,7 +89,7 @@ p:hover {
 }
 
 ol > li {
-    background-color: lightgreen;
+    background-color: rgb(144, 238, 144);
 }
 
 section label {
