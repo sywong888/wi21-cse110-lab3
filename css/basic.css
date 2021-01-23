@@ -12,6 +12,7 @@ figure + p {
 div.newton-dog {
     background-color:lightslategray;
     max-width: 600px;
+    font-size: 200%;
 }
 
 div.music {
@@ -20,6 +21,7 @@ div.music {
     width: 500px;
     padding: 100px;
     margin: 30px;
+    font-size: 5ch;
 }
 
 div.travel {
