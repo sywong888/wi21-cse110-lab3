@@ -4,6 +4,31 @@
         <meta charset="utf-8">
         <link href="css/basic.css" rel="stylesheet">
         <title>Syd's HTML Website!</title>
+        <style>
+            ul {
+                border-style: double;
+                border-color:aquamarine;
+                border-width: 3px;
+                border-radius: 5px;
+            }
+            .grid-container {
+                display: grid;
+                grid-template-columns: 75px 75px;
+                grid-template-rows: 15% auto;
+                column-gap: 50px;
+                row-gap: 5px;
+                justify-items: center;
+                align-items: end;
+                background-color: turquoise;
+            }
+            .grid-item {
+                background-color: lightcyan;
+                border: 2px;
+                padding: 5px;
+                font-size: 15px;
+                text-align: end;
+            }
+        </style>
     </head>
 
     <body>
@@ -101,25 +126,17 @@
                <span style="color:green">Alexander Zverev</span>. Here are some statistics about those players:
             </p>
 
-            <table>
-                <caption>Professional Tennis Players Statistics</caption>
-                <tr>
-                    <th scope="col">Player</th>
-                    <th scope="col">Grand Slams</th>
-                </tr>
-                <tr>
-                    <th scope="row">Roger Federer</th>
-                    <td>20</td>
-                </tr>
-                <tr>
-                    <th scope="row">Serena Williams</th>
-                    <td>23</td>
-                </tr>
-                <tr>
-                    <th scope="row">Alexander Zverev</th>
-                    <td>0</td>
-                </tr>
-            </table>
+            <caption>Professional Tennis Players Statistics</caption>
+            <div class="grid-container">
+                <div class="grid-item">Player</div>
+                <div class="grid-item">Grand Slams</div>
+                <div class="grid-item">Roger Federer</div>
+                <div class="grid-item">20</div>
+                <div class="grid-item">Serena Williams</div>
+                <div class="grid-item">23</div>
+                <div class="grid-item">Alexander Zverev</div>
+                <div class="grid-item">0</div>
+            </div>
         </section>
 
         <section>
